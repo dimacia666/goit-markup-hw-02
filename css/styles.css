@@ -3,6 +3,7 @@
     --accent-color: #4D5AE5;
     --main-bg-color: #FFFFFF;
     --main-font: 'Raleway', sans-serif;
+    --text-color: #434455;
 }
 
 body {
@@ -13,4 +14,115 @@ body {
 
 ul {
     list-style-type: none;
+}
+
+.accent {
+    width: 44px;
+    height: 24px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    /* IRIS */
+
+    color: #4D5AE5;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.logo {
+    width: 71px;
+    height: 24px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2E2F42;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.hero-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: #4D5AE5;
+}
+
+
+/* nav and address */
+
+.nav-list .nav-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #2E2F42;
+}
+
+.nav-list .nav-link:active {
+    font-family: 'Roboto';
+    color: #404BBF;
+}
+
+.address-item .address-link {
+    font-family: 'Roboto';
+    color: #2E2F42;
+}
+
+.address-item .address-link:active {
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #404BBF;
+}
+
+
+/* buttons */
+
+.hero-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: #4D5AE5;
+    border-radius: 4px;
+}
+
+.hero-button:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: #404BBF;
+    border-radius: 4px;
+}
+
+.hero-button-text {
+    width: 105px;
+    height: 24px;
+
+    /* Button Text */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
 }
