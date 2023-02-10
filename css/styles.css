@@ -1,128 +1,280 @@
 :root {
-    --main-color: #2E2F42;
-    --accent-color: #4D5AE5;
-    --main-bg-color: #FFFFFF;
-    --main-font: 'Raleway', sans-serif;
-    --text-color: #434455;
+    --color-main: #2E2F42;
+    --color-secondary: #434455;
+    --color-accent: #4D5AE5;
+    --color-link-active: #404BBF;
+    --color-main-bg: #FFFFFF;
+    --font-main: 'Roboto', sans-serif;
 }
 
 body {
+
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    background-color: #FFFFFF;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--color-main);
+    background-color: var(--color-main-bg);
 }
 
 ul {
     list-style-type: none;
 }
 
-.accent {
-    width: 44px;
-    height: 24px;
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 24px;
-    /* identical to box height, or 133% */
-
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    /* IRIS */
-
-    color: #4D5AE5;
 
 
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
+/* Navigation */
 
 .logo {
-    width: 71px;
-    height: 24px;
-
-    font-family: 'Raleway';
-    font-style: normal;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
+    line-height: 1.3;
+    color: var(--color-main);
+    text-decoration: none;
     text-transform: uppercase;
-    color: #2E2F42;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+}
+
+.accent {
+    color: var(--color-accent);
+}
+
+.nav-link {
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-main);
+    text-decoration: none;
+}
+
+.nav-link:active {
+    color: var(--color-link-active);
+}
+
+/* Address */
+
+.address-link {
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.address-link:active {
+    color: var(--color-link-active);
+}
+
+/* Hero */
+
+.hero-title {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    color: #FFFFFF;
+    background-color: var(--color-main);
 }
 
 .hero-button {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    background: #4D5AE5;
-}
-
-
-/* nav and address */
-
-.nav-list .nav-link {
-    font-family: 'Roboto';
-    font-style: normal;
-    color: #2E2F42;
-}
-
-.nav-list .nav-link:active {
-    font-family: 'Roboto';
-    color: #404BBF;
-}
-
-.address-item .address-link {
-    font-family: 'Roboto';
-    color: #2E2F42;
-}
-
-.address-item .address-link:active {
-    font-family: 'Roboto';
-    font-style: normal;
-    color: #404BBF;
-}
-
-
-/* buttons */
-
-.hero-button {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    background: #4D5AE5;
+    background: var(--color-accent);
+    border: none;
     border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .hero-button:hover {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    background: #404BBF;
-    border-radius: 4px;
+    background-color: var(--color-link-active);
 }
 
 .hero-button-text {
-    width: 105px;
-    height: 24px;
-
-    /* Button Text */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    display: flex;
-    align-items: center;
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
     color: #FFFFFF;
+}
+
+/* Features */
+
+.features-subtitle {
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-main);
+}
+
+.features-text {
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-secondary);
+}
+
+/* Execution */
+
+.execution-title {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--color-main);
+}
+
+/* Team */
+
+.team-title {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--color-main);
+}
+
+.team-subtitle {
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-main);
+}
+
+.team-text {
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-secondary);
+}
+
+/* Footer */
+
+.footer-text {
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #E7E9FC;
+    background-color: #2E2F42;
+}
+
+
+
+/* Portfolio */
+
+/* Hero */
+
+.search-button-all {
+    padding: 12px 24px;
+    width: 69px;
+    height: 48px;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    flex: none;
+    cursor: pointer;
+}
+
+.search-button-all:hover {
+    background-color: #404BBF;
+}
+
+.search-button-website {
+    padding: 12px 24px;
+    width: 116px;
+    height: 48px;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    flex: none;
+    cursor: pointer;
+}
+
+.search-button-website:hover {
+    background-color: #404BBF;
+}
+
+.search-button-app {
+    padding: 12px 24px;
+    width: 78px;
+    height: 48px;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    flex: none;
+    cursor: pointer;
+}
+
+.search-button-app:hover {
+    background-color: #404BBF;
+}
+
+
+.search-button-design {
+    padding: 12px 24px;
+    width: 101px;
+    height: 48px;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    flex: none;
+    cursor: pointer;
+}
+
+.search-button-design:hover {
+    background-color: #404BBF;
+}
+
+.search-button-marketing {
+    padding: 12px 24px;
+    width: 126px;
+    height: 48px;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    flex: none;
+    cursor: pointer;
+}
+
+.search-button-marketing:hover {
+    background-color: #404BBF;
+}
+
+.search-button-text {
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-accent);
+}
+
+.search-button-text:hover {
+    color: var(--color-main-bg);
+}
+
+
+
+/* Design */
+
+.design-subtitle {
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-main);
+}
+
+.design-text {
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-secondary);
 }
