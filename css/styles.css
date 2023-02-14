@@ -8,11 +8,9 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    font-family: var(--font-main);
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 400;
     color: var(--color-main);
     background-color: var(--color-main-bg);
 }
@@ -29,7 +27,7 @@ ul {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 1.33;
     color: var(--color-main);
     text-decoration: none;
     text-transform: uppercase;
@@ -40,11 +38,8 @@ ul {
 }
 
 .nav-link {
-    font-family: var(--font-main);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
     color: var(--color-main);
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -52,13 +47,19 @@ ul {
     color: var(--color-link-active);
 }
 
+.nav-link:hover {
+    color: var(--color-link-active);
+}
+
+.nav-link:focus {
+    color: var(--color-link-active);
+}
+
+
+
 /* Address */
 
 .address-link {
-    font-family: var(--font-main);
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.5;
     color: var(--color-secondary);
     text-decoration: none;
 }
@@ -67,15 +68,26 @@ ul {
     color: var(--color-link-active);
 }
 
+.address-link:hover {
+    color: var(--color-link-active);
+}
+
+.address-link:focus {
+    color: var(--color-link-active);
+}
+
+
+
 /* Hero */
 
+.hero {
+    background-color: var(--color-main);
+}
+
 .hero-title {
-    font-family: var(--font-main);
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    color: #FFFFFF;
-    background-color: var(--color-main);
+    color: var(--color-main-bg);
 }
 
 .hero-button {
@@ -91,79 +103,62 @@ ul {
 }
 
 .hero-button-text {
-    font-family: var(--font-main);
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #FFFFFF;
+    color: var(--color-main-bg);
 }
+
+
 
 /* Features */
 
 .features-subtitle {
-    font-family: var(--font-main);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    color: var(--color-main);
 }
 
 .features-text {
-    font-family: var(--font-main);
-    font-size: 16px;
-    line-height: 1.5;
     color: var(--color-secondary);
 }
 
-/* Execution */
+/* Execution, Team */
 
-.execution-title {
-    font-family: var(--font-main);
-    font-weight: 700;
+.section-title {
     font-size: 36px;
-    line-height: 1.1;
-    color: var(--color-main);
-}
-
-/* Team */
-
-.team-title {
-    font-family: var(--font-main);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1;
-    color: var(--color-main);
+    line-height: 1.11;
 }
 
 .team-subtitle {
-    font-family: var(--font-main);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    color: var(--color-main);
 }
 
-.team-text {
-    font-family: var(--font-main);
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--color-secondary);
-}
 
 /* Footer */
 
+.footer {
+    background-color: var(--color-main);
+}
+
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    color: #F4F4FD;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 .footer-text {
-    font-family: var(--font-main);
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.5;
     color: #E7E9FC;
-    background-color: #2E2F42;
 }
 
 
-
 /* Portfolio */
+
+
 
 /* Hero */
 
@@ -176,10 +171,12 @@ ul {
     border-radius: 4px;
     flex: none;
     cursor: pointer;
+    color: var(--color-accent);
 }
 
 .search-button-all:hover {
-    background-color: #404BBF;
+    background-color: var(--color-link-active);
+    color: var(--color-main-bg);
 }
 
 .search-button-website {
@@ -191,10 +188,12 @@ ul {
     border-radius: 4px;
     flex: none;
     cursor: pointer;
+    color: var(--color-accent);
 }
 
 .search-button-website:hover {
-    background-color: #404BBF;
+    background-color: var(--color-link-active);
+    color: var(--color-main-bg);
 }
 
 .search-button-app {
@@ -206,10 +205,12 @@ ul {
     border-radius: 4px;
     flex: none;
     cursor: pointer;
+    color: var(--color-accent);
 }
 
 .search-button-app:hover {
-    background-color: #404BBF;
+    background-color: var(--color-link-active);
+    color: var(--color-main-bg);
 }
 
 
@@ -222,13 +223,16 @@ ul {
     border-radius: 4px;
     flex: none;
     cursor: pointer;
+    color: var(--color-accent);
 }
 
 .search-button-design:hover {
-    background-color: #404BBF;
+    background-color: var(--color-link-active);
+    color: var(--color-main-bg);
 }
 
 .search-button-marketing {
+    font-weight: 500;
     padding: 12px 24px;
     width: 126px;
     height: 48px;
@@ -237,22 +241,11 @@ ul {
     border-radius: 4px;
     flex: none;
     cursor: pointer;
-}
-
-.search-button-marketing:hover {
-    background-color: #404BBF;
-}
-
-.search-button-text {
-    font-family: var(--font-main);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
     color: var(--color-accent);
 }
 
-.search-button-text:hover {
+.search-button-marketing:hover {
+    background-color: var(--color-link-active);
     color: var(--color-main-bg);
 }
 
@@ -261,7 +254,6 @@ ul {
 /* Design */
 
 .design-subtitle {
-    font-family: var(--font-main);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -269,8 +261,5 @@ ul {
 }
 
 .design-text {
-    font-family: var(--font-main);
-    font-size: 16px;
-    line-height: 1.5;
     color: var(--color-secondary);
 }
