@@ -66,6 +66,7 @@ ul {
 .address-link {
     color: var(--color-secondary);
     text-decoration: none;
+    font-style: normal;
 }
 
 .address-link:active {
