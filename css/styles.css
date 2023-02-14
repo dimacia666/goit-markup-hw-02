@@ -109,30 +109,24 @@ ul {
 
 
 
-/* Features */
-
-.features-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-}
-
-.features-text {
-    color: var(--color-secondary);
-}
-
-/* Execution, Team */
+/* Features, Execution, Team */
 
 .section-title {
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
 }
 
-.team-subtitle {
+.section-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
 }
+
+.section-text {
+    color: var(--color-secondary);
+}
+
 
 
 /* Footer */
