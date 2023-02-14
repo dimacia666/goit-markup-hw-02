@@ -107,6 +107,10 @@ ul {
     background-color: var(--color-link-active);
 }
 
+.hero-button:focus {
+    background-color: var(--color-link-active);
+}
+
 .hero-button-text {
     font-weight: 500;
     color: var(--color-main-bg);
@@ -180,6 +184,11 @@ ul {
     color: var(--color-main-bg);
 }
 
+.search-button-all:focus {
+    background-color: var(--color-link-active);
+    color: var(--color-main-bg);
+}
+
 .search-button-website {
     padding: 12px 24px;
     width: 116px;
@@ -198,6 +207,12 @@ ul {
     color: var(--color-main-bg);
 }
 
+
+.search-button-website:focus {
+    background-color: var(--color-link-active);
+    color: var(--color-main-bg);
+}
+
 .search-button-app {
     padding: 12px 24px;
     width: 78px;
@@ -212,6 +227,11 @@ ul {
 }
 
 .search-button-app:hover {
+    background-color: var(--color-link-active);
+    color: var(--color-main-bg);
+}
+
+.search-button-app:focus {
     background-color: var(--color-link-active);
     color: var(--color-main-bg);
 }
@@ -235,6 +255,11 @@ ul {
     color: var(--color-main-bg);
 }
 
+.search-button-design:focus {
+    background-color: var(--color-link-active);
+    color: var(--color-main-bg);
+}
+
 .search-button-marketing {
     font-weight: 500;
     padding: 12px 24px;
@@ -250,6 +275,11 @@ ul {
 }
 
 .search-button-marketing:hover {
+    background-color: var(--color-link-active);
+    color: var(--color-main-bg);
+}
+
+.search-button-marketing:focus {
     background-color: var(--color-link-active);
     color: var(--color-main-bg);
 }
