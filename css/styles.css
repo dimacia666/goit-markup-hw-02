@@ -4,6 +4,8 @@
     --color-accent: #4D5AE5;
     --color-link-active: #404BBF;
     --color-main-bg: #FFFFFF;
+    --leter-spacing-logo: 0.03em;
+    --leter-spacing-button: 0.04em;
     --font-main: 'Roboto', sans-serif;
 }
 
@@ -13,6 +15,7 @@ body {
     line-height: 1.5;
     color: var(--color-main);
     background-color: var(--color-main-bg);
+    letter-spacing: 0.02em;
 }
 
 ul {
@@ -31,6 +34,7 @@ ul {
     color: var(--color-main);
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: var(--leter-spacing-logo);
 }
 
 .accent {
@@ -96,6 +100,7 @@ ul {
     border-radius: 4px;
     padding: 16px 32px;
     cursor: pointer;
+    letter-spacing: var(--leter-spacing-button);
 }
 
 .hero-button:hover {
@@ -143,6 +148,7 @@ ul {
     color: #F4F4FD;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: var(--leter-spacing-logo);
 }
 
 .footer-text {
@@ -166,6 +172,7 @@ ul {
     flex: none;
     cursor: pointer;
     color: var(--color-accent);
+    letter-spacing: var(--leter-spacing-button);
 }
 
 .search-button-all:hover {
@@ -183,6 +190,7 @@ ul {
     flex: none;
     cursor: pointer;
     color: var(--color-accent);
+    letter-spacing: var(--leter-spacing-button);
 }
 
 .search-button-website:hover {
@@ -200,6 +208,7 @@ ul {
     flex: none;
     cursor: pointer;
     color: var(--color-accent);
+    letter-spacing: var(--leter-spacing-button);
 }
 
 .search-button-app:hover {
@@ -218,6 +227,7 @@ ul {
     flex: none;
     cursor: pointer;
     color: var(--color-accent);
+    letter-spacing: var(--leter-spacing-button);
 }
 
 .search-button-design:hover {
@@ -236,6 +246,7 @@ ul {
     flex: none;
     cursor: pointer;
     color: var(--color-accent);
+    letter-spacing: var(--leter-spacing-button);
 }
 
 .search-button-marketing:hover {
